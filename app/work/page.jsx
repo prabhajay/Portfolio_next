@@ -28,10 +28,9 @@ const projects = [
     description:
       "Created a menu website using Next.js, where users can browse dishes and view ingredients. Deployed on Vercel with React hooks for state management.",
     stack: ["next.js"], // Changed to an array of strings
-    image: "/images/image1.png",
-    link: "",
-    github: "",
-    live: "",
+    image: "/images/food_recipe.png",
+    github: "https://github.com/prabhajay/Food_recipe_using_next.js",
+    live: "https://food-recipes-next.vercel.app/",
   },
   {
     num: "02",
@@ -39,11 +38,10 @@ const projects = [
     title: "Calculator using React",
     description:
       "Developed a React-based calculator application performing mathematical operations with state management using the useReducer hook.",
-    stack: ["React", "Node.js", "MongoDB"], // Changed to an array of strings
-    image: "/images/image2.png",
-    link: "",
-    github: "",
-    live: "",
+    stack: ["React", "Node.js","Express.js", "MongoDB"], // Changed to an array of strings
+    image: "/images/calc.png",
+    github: "https://github.com/prabhajay/Calculator_react",
+    live: "https://calculator-react-two-lime.vercel.app/",
   },
   {
     num: "03",
@@ -51,11 +49,10 @@ const projects = [
     title: "Todo List using React",
     description:
       "Designed and developed a to-do list application allowing users to add, complete, and remove tasks.",
-    stack: ["React", "Node.js", "MongoDB"], // Changed to an array of strings
-    image: "/images/image3.png",
-    link: "",
-    github: "",
-    live: "",
+    stack: ["React", "Node.js","Express.js"], // Changed to an array of strings
+    image: "/images/todo_list_react.png",
+    github: "https://github.com/prabhajay/todo-react",
+    live: "https://todo-react-sable-seven.vercel.app/",
   },
   {
     num: "04",
@@ -63,11 +60,10 @@ const projects = [
     title: "Online Shopping using React and Node.js",
     description:
       "Built a shopping website using the MERN stack, featuring product selection, a shopping cart, and user authentication via Firebase. Integrated Stripe for secure payments and deployed on Render.",
-    stack: ["React", "Node.js", "MongoDB"], // Changed to an array of strings
+    stack: ["React", "Node.js", "Express.js","MongoDB"], // Changed to an array of strings
     image: "/images/hotel.png",
-    link: "",
-    github: "",
-    live: "",
+    github: "https://github.com/prabhajay/hotel-app",
+    live: "https://shopping-1-moxd.onrender.com/",
   },
 ];
 
@@ -95,7 +91,7 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title} project
               </h2>
               <p className="text-white/60">{project.description}</p>
 
@@ -117,7 +113,7 @@ const Work = () => {
                           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Live projec</p>
+                          <p>Live project</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -139,7 +135,6 @@ const Work = () => {
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
-            slider
             <Swiper
               spaceBetween={30}
               slidesPerView={1}

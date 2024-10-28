@@ -52,11 +52,11 @@ const Contact = () => {
               <h3 className="text-4xl text-accent"> Let's work together</h3>
               <p className="text-white/60">Lorem </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
+                <Input type="firstname" placeholder="Firstname : " />
+                <Input type="lastname" placeholder="Lastname : " />
 
-                <Input type="email" placeholder="Email" />
-                <Input type="phone" placeholder="Phone" />
+                <Input type="email" placeholder="Email : " />
+                <Input type="phone" placeholder="Phone : "  />
               </div>
               <Select>
                 <SelectTrigger className="w-full">
@@ -76,7 +76,7 @@ const Contact = () => {
                 className="h-[200px]"
                 placeholder="Type your message here."
               />
-              <Button size="md" className="max-w-40">
+              <Button size="md" className="max-w-40" >
                 Send message
               </Button>
             </form>

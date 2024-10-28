@@ -6,8 +6,9 @@ import {
   FaReact,
   FaNodeJs,
   FaBootstrap,
+  FaAws
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss,SiShadcnui, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: "About me",
@@ -146,6 +147,16 @@ const skills = {
       name: "Bootstrap",
       experience: 6,
     },
+    {
+      icon: <FaAws size={50} />,
+      name: "AWS",
+      experience: 5,
+    },
+    {
+      icon: <SiShadcnui size={50} />,
+      name: "Shadcn ui",
+      experience: 5,
+    },
   ],
 };
 
@@ -245,7 +256,7 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
-               {/* <p className="max-w-[600px] text-white/60mx-auto xl:mx-0">
+                {/* <p className="max-w-[600px] text-white/60mx-auto xl:mx-0">
                   {skills.description}
                 </p>*/}
                 <ScrollArea className="overflow-auto h-[400px]">
@@ -289,13 +300,16 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px] ">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-               { /*<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                {/*<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>*/}
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>

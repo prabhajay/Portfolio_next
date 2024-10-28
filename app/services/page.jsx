@@ -12,17 +12,17 @@ const services = [
   {
     num: "02",
     title: "Back end developer",
-    language: "Node.js,Javascript, Express.js,C#",
+    language: "Node.js, Javascript, Express.js, C#",
   },
   {
     num: "03",
     title: "Full stack development",
-    language: "MongoDB,MySQL,PostgraSQL Front end and Back end",
+    language: "MongoDB, MySQL, PostgraSQL, AWS, Front end and Back end",
   },
   {
     num: "04",
     title: "MERN developer",
-    language: "MongoDB,Express,React,and Node.js. ",
+    language: "MongoDB, Express, React,and Node.js. ",
   },
 ];
 import { motion } from "framer-motion";
