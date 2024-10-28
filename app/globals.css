@@ -2,14 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
-  :root {
-    --radius: 0.5rem;
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
-
+  .h2 {
+    @apply text-[36px] xl:text-[36px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[24px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline{
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover{
+    -webkit-text-stroke:1px #00ff99;
+  }
+  /* Add this to your global styles */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff99; /* Thumb color */
+  border-radius: 10px; /* Thumb border radius */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b; /* Track color */
+}
+
+  
+}
+
